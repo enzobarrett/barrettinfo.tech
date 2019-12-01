@@ -1,23 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello Bulma!</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	<style>
-.parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-img {
-    width: 50%;
+a.navbar-item>.icon:not(:last-child) {
+    margin-left:-.25em;
+    margin-right:.25em
 }
 	</style>
     </head>
     <body>
-	<div class="parent">
-	    <img alt="logo" src="bit.svg">
-	</div>
+	<nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
+	    <div class="container">
+		<div class="navbar-brand">
+		    <a class="navbar-item" href="https://enzobarrett.dev">
+			<img src="bitn.svg" width="250.00000" height="28">
+		    </a>
+
+		    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		    </a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+		    <div class="navbar-start">
+			<a class="navbar-item">
+			    <span class="icon has-text-danger">
+				<i class="fas fa-home"></i>
+			    </span>
+			    <span>Home</span>	
+			</a>
+
+			<a class="navbar-item">
+			    <span class="icon has-text-info">
+				<i class="fas fa-address-card"></i>
+			    </span>
+			    <p>About</p>
+			</a>
+			<!--
+
+       <div class="navbar-item has-dropdown is-hoverable">
+       <a class="navbar-link">
+       More
+       </a>
+
+       <div class="navbar-dropdown">
+       <a class="navbar-item">
+       About
+       </a>
+       <a class="navbar-item">
+       Jobs
+       </a>
+       <a class="navbar-item">
+       Contact
+       </a>
+       <hr class="navbar-divider">
+       <a class="navbar-item">
+       Report an issue
+       </a>
+       </div>
+       </div>
+			-->
+		    </div>
+
+		    <div class="navbar-end">
+			<div class="navbar-item">
+			    <div class="buttons">
+				<a class="button is-primary">
+				    <strong>Request A Quote</strong>
+				</a>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</nav>
+	<section class="hero is-medium">
+	    <div class="hero-body">
+		<div class="container">
+		    <div class="columns">
+			<div class="column">
+			    <h1 class="title">
+				Welcome to <strong>Barrett Info Tech</strong>! Specializing in web design, online presence, photography, and logos, Barrett Info Tech has been a jack of all trades in the tech industry.
+			    </h1>
+			</div>
+			<div class="column">
+			    <figure class="image">
+				<img src="bitlm.svg">
+			    </figure>
+			</div>
+		    </div>
+		    <div class="columns has-text-centered">
+			<div class="column">
+			    <p class="button is-primary is-large is-fullwidth"><strong>Website-Design</strong></p>
+			</div>
+			<div class="column">
+			    <p class="button is-success is-large is-fullwidth"><strong>Logo Design</strong></p>
+			</div>
+			<div class="column">
+			    <p class="button is-info is-large is-fullwidth"><strong>Photography</strong></p>
+			</div>
+			<div class="column">
+			    <a class="button notification is-warning is-large is-fullwidth"><strong>Digital Reception</strong></a>
+			</div>
+		    </div>
+
+		</div>
+
+
+
+	    </div>
+	</section>
+	<script src="navbar.js"></script>
     </body>
-    <footer>
-    </footer>
 </html>
