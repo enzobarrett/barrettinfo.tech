@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BIT</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+	<nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
+	    <div class="container">
+		<div class="navbar-brand">
+		    <a class="navbar-item" href="https://enzobarrett.dev">
+			<img src="bitn.svg" width="250.00000" height="28">
+		    </a>
+
+		    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		    </a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+		    <div class="navbar-start">
+			<a class="navbar-item">
+			    <span class="icon has-text-danger">
+				<i class="fas fa-home"></i>
+			    </span>
+			    <span>Home</span>	
+			</a>
+
+			<a class="navbar-item">
+			    <span class="icon has-text-info">
+				<i class="fas fa-address-card"></i>
+			    </span>
+			    <span>About</span>
+			</a>
+			<!--
+
+       <div class="navbar-item has-dropdown is-hoverable">
+       <a class="navbar-link">
+       More
+       </a>
+
+       <div class="navbar-dropdown">
+       <a class="navbar-item">
+       About
+       </a>
+       <a class="navbar-item">
+       Jobs
+       </a>
+       <a class="navbar-item">
+       Contact
+       </a>
+       <hr class="navbar-divider">
+       <a class="navbar-item">
+       Report an issue
+       </a>
+       </div>
+       </div>
+			-->
+		    </div>
+
+		    <div class="navbar-end">
+			<div class="navbar-item">
+			    <div class="buttons">
+				<a href="contact.html" class="button is-primary">
+				    <strong>Request A Quote</strong>
+				</a>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</nav>
+	<section class="hero is-medium">
+	    <div class="hero-body">
+		<div class="container">
+		    <div class="columns">
+			<div class="column">
+			    <form action="https://api.enzobarrett.dev/contact" method="post" autocomplete="off">
+				<div class="field">
+				    <label class="label">Name</label>
+				    <div class="control has-icons-left">
+					<input class="input" name="name" type="text" placeholder="Johnny Apple" maxlength="50" required>
+					<span class="icon is-small is-left">
+					    <i class="fas fa-user"></i>
+					</span>
+				    </div>
+				</div>
+
+				<div class="field">
+				    <label class="label">Email</label>
+				    <div class="control has-icons-left">
+					<input id="email" class="input" name="email" type="email" placeholder="example@enzobarrett.dev" value="" maxlength="40" required>
+					<span class="icon is-small is-left">
+					    <i class="fas fa-envelope"></i>
+					</span>
+					<!--
+	 <span class="icon is-small is-right">
+	 <i class="fas fa-exclamation-triangle"></i>
+	 </span>
+					-->
+				    </div>
+				    <p class="help is-danger email">This email is invalid</p>
+				</div>
+
+				<div class="field">
+				    <label class="label">Subject</label>
+				    <div class="control">
+					<div class="select">
+					    <select name="catagory" required>
+						<option value="1">Web Development</option>
+						<option value="2">Digital Marketing</option>
+						<option value="3">Logo Design</option>
+						<option value="4">Photography</option>
+					    </select>
+					</div>
+				    </div>
+				</div>
+
+				<div class="field">
+				    <label class="label">Message</label>
+				    <div class="control">
+					<textarea required class="textarea" name="desc" placeholder="What do you want to say?" maxlength="4000"></textarea>
+				    </div>
+				</div>
+
+				<div class="field is-grouped">
+				    <div class="control">
+					<button class="button is-link">Submit</button>
+				    </div>
+				</div>
+			    </form>
+			</div>
+			<div class="column">
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</section>
+	<script src="navbar.js"></script>
+    </body>
+</html>
