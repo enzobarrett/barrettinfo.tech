@@ -16,3 +16,15 @@ a.navbar-item>.icon:not(:last-child) {
 .border > img {
     border: 1px solid black;
 }
+
+.border {
+    margin-bottom: .5rem;
+}
+
+.maintext {
+    margin-bottom: 1.5rem;
+}
+
+.hero-body {
+    padding-top: 5rem !important;
+}
