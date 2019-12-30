@@ -28,3 +28,7 @@ a.navbar-item>.icon:not(:last-child) {
 .hero-body {
     padding-top: 5rem !important;
 }
+
+.title.is-size-1 {
+    font-family: tomorrow;
+}
