@@ -35,3 +35,67 @@ a.navbar-item>.icon:not(:last-child) {
     }
 }
 
+.footer {
+  /* background-color: #fafafa; */
+  background-color: #282828;
+}
+
+/* Element | file:///home/enzo/enzobarrett.dev/index.html */
+
+.footer {
+  color: #F8F8FF;
+}
+
+/* Inline #4 | file:///home/enzo/enzobarrett.dev/index.html */
+
+.hover {
+    letter-spacing: 0;
+      border: 1px solid #282828;
+}
+
+.hover:hover {
+  color: white;
+}
+
+.hover:hover {
+  background: #3c3836;
+}
+
+
+.hover {
+    letter-spacing: 0;
+    transition: all 280ms ease-in-out;
+}
+
+.hover:hover,
+.hover:active {
+  letter-spacing: 2px;
+  border: 1px solid white;
+}
+
+.hover:after,
+.hover:before {
+    visibility: hidden;
+  border: 1px solid #000;
+  content: " ";
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.hover:hover:after,
+.hover:hover:before {
+  
+    visibility: visible;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.hover:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
