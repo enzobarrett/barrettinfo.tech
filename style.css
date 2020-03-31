@@ -35,17 +35,10 @@ a.navbar-item>.icon:not(:last-child) {
     }
 }
 
-.footer {
-  /* background-color: #fafafa; */
-  background-color: #282828;
-}
-
-/* Element | file:///home/enzo/enzobarrett.dev/index.html */
 
 .footer {
-  color: #F8F8FF;
+    color: #f8f8ff;
 }
-
 /* Inline #4 | file:///home/enzo/enzobarrett.dev/index.html */
 
 .hover {
@@ -53,9 +46,6 @@ a.navbar-item>.icon:not(:last-child) {
       border: 1px solid #282828;
 }
 
-.hover:hover {
-  color: white;
-}
 
 .hover:hover {
   background: #3c3836;
