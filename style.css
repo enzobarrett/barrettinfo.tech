@@ -184,3 +184,10 @@ a.navbar-item>.icon:not(:last-child) {
 .dark > a:hover {
     color: #4681df;
 }
+
+/* iframe rule */
+iframe {
+    width: 100%;
+    height: 1505px;
+    overflow: hidden;
+}
