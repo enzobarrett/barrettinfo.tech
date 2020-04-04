@@ -19,6 +19,7 @@ a.navbar-item>.icon:not(:last-child) {
 
 .maintext {
     margin-bottom: .5rem;
+    line-height: 1.2;
 }
 
 .hero-body {
