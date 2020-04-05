@@ -191,3 +191,7 @@ iframe {
     height: 1505px;
     overflow: hidden;
 }
+
+#albumart, #trumpet, #xkcd {
+    width: 63%;
+}
