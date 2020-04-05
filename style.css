@@ -26,9 +26,6 @@ a.navbar-item>.icon:not(:last-child) {
     padding-top: 5rem !important;
 }
 
-.title.is-size-1 {
-    font-family: tomorrow;
-}
 
 @media only screen and (max-width: 768px) {
     .is-size-1 {
