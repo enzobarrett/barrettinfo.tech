@@ -1,0 +1,31 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out repository under $GITHUB_WORKSPACE
+    - uses: actions/checkout@v2
+
+    - name: Install AWS, sync repository to bucket, and invalidate all files
+      run: |
+        # Install AWS CLI
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip -q awscliv2.zip
+        sudo ./aws/install
+        
+        # Sync to s3 bucket
+        aws s3 sync . s3://barrettinfo.tech --delete --exclude ".git/*" --exclude ".github/*" --exclude "aws/*"
+        
+        # Invalidate all cached files
+        # aws cloudfront create-invalidation --distribution-id E25WMBXY2JA135 --paths "/*"
+ 
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
