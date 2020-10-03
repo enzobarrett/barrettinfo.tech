@@ -23,7 +23,7 @@ jobs:
         aws s3 sync . s3://barrettinfo.tech --delete --exclude ".git/*" --exclude ".github/*" --exclude "aws/*" --exclude "sass/*"
         
         # Invalidate all cached files
-        # aws cloudfront create-invalidation --distribution-id E25WMBXY2JA135 --paths "/*"
+        aws cloudfront create-invalidation --distribution-id E25WMBXY2JA135 --paths "/*"
  
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
